@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 1. HTML Basics: DOCTYPE declaration, meta tags for charset and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. HTML Basics: Title tag -->
+    <title>Task1</title>
+</head>
+<body>
+    <!-- 6. Semantic Tags: header for introductory content -->
+    <header>
+        <!-- 3. Basic Tags: Bold for emphasis in heading -->
+        <h1><b>Task1. HTML Calculator</b></h1>
+        <!-- 2. Text Alignment: Using align attribute for centering -->
+        <p align="center">Welcome to this professional demonstration of HTML fundamentals through a simple calculator interface.</p>
+    </header>
+
+    <!-- 6. Semantic Tags: nav for navigation links -->
+    <nav>
+        <!-- 5. Lists: Unordered list (ul) with anchor links -->
+        <ul>
+            <li><a href="#definition">Definition</a></li>
+            <li><a href="#instructions">Instructions</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#examples">Examples</a></li>
+        </ul>
+    </nav>
+
+    <!-- 6. Semantic Tags: main for primary content -->
+    <main>
+        <!-- 6. Semantic Tags: section for grouping related content -->
+        <section id="definition">
+            <!-- 3. Basic Tags: Heading with bold; Paragraph with bold and italics for emphasis -->
+            <h2><b>What is a Calculator?</b></h2>
+            <p>A <b>calculator</b> is an essential electronic device or software tool designed to perform <i>basic arithmetic operations</i> quickly and accurately. It simplifies complex computations for users in fields like mathematics, engineering, and everyday life. This HTML-based demo showcases core web development concepts while simulating a functional calculator interface.</p>
+            <!-- 5. Lists: Unordered list (ul) with bold and italics for list items -->
+            <ul>
+                <li><b>Addition (+):</b> Combines two or more numbers to find their sum.</li>
+                <li><i>Subtraction (-):</i> Finds the difference between two numbers.</li>
+                <li><b>Multiplication (×):</b> Repeated addition of one number by another.</li>
+                <li><i>Division (÷):</i> Splits a number into equal parts based on a divisor.</li>
+            </ul>
+        </section>
+
+        <!-- 6. Semantic Tags: section for instructions -->
+        <section id="instructions">
+            <h2><b>How to Use This Calculator</b></h2>
+            <!-- 5. Lists: Ordered list (ol) for step-by-step instructions with italics -->
+            <ol>
+                <li>Enter the first number in the <i>Input 1</i> field.</li>
+                <li>Enter the second number in the <i>Input 2</i> field.</li>
+                <li>Select the desired operation from the dropdown menu.</li>
+                <li>Click the <b>Calculate</b> button to simulate the operation (note: pure HTML demo; results shown in examples below).</li>
+                <li>Review the example table for computed results.</li>
+            </ol>
+            <!-- 4. Links: Anchor tag with target="_blank" and rel="noopener" for external link -->
+            <p>For advanced calculations, visit our recommended <a href="https://www.online-calculator.com/" target="_blank" rel="noopener">online calculator</a>.</p>
+            <!-- 3. Basic Tags: Heading with italics; 7. Multimedia: iframe for embedded video -->
+            <h3><i>Video Tutorial: How to Use a Basic Calculator</i></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x-2HjO4iGXI" title="How to Use a Basic Calculator" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- 6. Semantic Tags: section for calculator form -->
+        <section id="calculator">
+            <h2><b>Calculator Inputs</b></h2>
+            <!-- 7. Divs & Classes: div with class and id for grouping form elements -->
+            <div class="input-container" id="calc-input">
+                <!-- 5. Forms: Label and input (number type) with attributes like step, placeholder, required -->
+                <label for="input1"><b>Input 1:</b></label>
+                <input type="number" id="input1" name="input1" step="any" placeholder="e.g., 10" required>
+                <br><br>
+
+                <!-- 5. Forms: Label and input (text type) with placeholder and maxlength -->
+                <label for="input2"><b>Input 2:</b></label>
+                <input type="text" id="input2" name="input2" placeholder="e.g., 5" maxlength="10">
+                <br><br>
+
+                <!-- 5. Forms: Label and select dropdown with options -->
+                <label for="operation"><b>Operation:</b></label>
+                <select id="operation" name="operation">
+                    <option value="add">Addition (+)</option>
+                    <option value="subtract">Subtraction (-)</option>
+                    <option value="multiply">Multiplication (×)</option>
+                    <option value="divide">Division (÷)</option>
+                </select>
+                <br><br>
+
+                <!-- 5. Forms: Radio buttons with labels for mode selection -->
+                <input type="radio" id="basic" name="mode" value="basic" checked>
+                <label for="basic">Basic Mode</label>
+                <br>
+                <input type="radio" id="advanced" name="mode" value="advanced">
+                <label for="advanced">Advanced Mode</label>
+                <br><br>
+
+                <!-- 5. Forms: Checkbox with label -->
+                <input type="checkbox" id="steps" name="steps">
+                <label for="steps">Show Steps</label>
+                <br><br>
+
+                <!-- 5. Forms: Label and date input with value attribute -->
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" value="2025-10-28">
+                <br><br>
+
+                <!-- 5. Forms: Button elements for submit and reset -->
+                <button type="submit">Calculate</button>
+                <button type="reset">Clear</button>
+            </div>
+        </section>
+
+        <!-- 6. Semantic Tags: section for examples -->
+        <section id="examples">
+            <h2><b>Example Calculations</b></h2>
+            <!-- 7. Tables: Table with border attribute for lines, thead and tbody for structured data -->
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Input 1</th>
+                        <th>Input 2</th>
+                        <th>Operation</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>Addition (+)</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>Subtraction (-)</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>Multiplication (×)</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>4</td>
+                        <td>Division (÷)</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>2</td>
+                        <td>Addition (+)</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>7</td>
+                        <td>Subtraction (-)</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>Multiplication (×)</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>3</td>
+                        <td>Division (÷)</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- 6. Semantic Tags: footer for closing content -->
+    <footer>
+        <!-- 3. Basic Tags: Paragraph with bold; 4. Images: img tag with src, alt, width, height -->
+        <p>&copy; 2025 Created by <b>doondi30</b>. All rights reserved.</p>
+    </footer>
+</body>
+</html>
